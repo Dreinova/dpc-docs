@@ -1,0 +1,5 @@
+{
+  "label": "Importación de Excel",
+  "position": 5,
+  "link": { "type": "generated-index", "description": "Cómo se migran las matrices de Excel a la base: fuentes, mapeo, idempotencia, conciliación y reversión." }
+}

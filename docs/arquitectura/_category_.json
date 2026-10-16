@@ -1,0 +1,5 @@
+{
+  "label": "Arquitectura",
+  "position": 2,
+  "link": { "type": "generated-index", "description": "Capas del sistema, frontend y seguridad." }
+}

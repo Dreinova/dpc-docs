@@ -1,0 +1,250 @@
+/**
+ * Tema de la app Gestión DPC (BASES DPC/src/index.css): color de marca teal, fondos y textos slate de Tailwind,
+ * fuente Inter / sistema, navegación lateral blanca con el elemento activo en marca-50.
+ */
+
+:root {
+  /* Marca (Tailwind teal) */
+  --marca-50: #f0fdfa;
+  --marca-100: #ccfbf1;
+  --marca-500: #14b8a6;
+  --marca-600: #0d9488;
+  --marca-700: #0f766e;
+  --marca-800: #115e59;
+  --marca-900: #134e4a;
+
+  /* Slate (Tailwind) */
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+
+  --ifm-color-primary: var(--marca-700);
+  --ifm-color-primary-dark: #0e6a63;
+  --ifm-color-primary-darker: #0d645d;
+  --ifm-color-primary-darkest: var(--marca-800);
+  --ifm-color-primary-light: #108279;
+  --ifm-color-primary-lighter: var(--marca-600);
+  --ifm-color-primary-lightest: var(--marca-500);
+
+  --ifm-font-family-base: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --ifm-font-color-base: var(--slate-800);
+  --ifm-heading-color: var(--slate-900);
+  --ifm-color-emphasis-600: var(--slate-500);
+  --ifm-background-color: var(--slate-50);
+  --ifm-background-surface-color: #ffffff;
+  --ifm-toc-border-color: var(--slate-200);
+  --ifm-hr-background-color: var(--slate-200);
+  --ifm-global-radius: 0.5rem;
+  --ifm-global-shadow-lw: 0 1px 2px 0 rgb(15 23 42 / 0.05);
+
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: none;
+  --ifm-navbar-link-color: var(--slate-600);
+  --ifm-navbar-link-hover-color: var(--slate-900);
+
+  --ifm-menu-color: var(--slate-600);
+  --ifm-menu-color-active: var(--marca-800);
+  --ifm-menu-color-background-active: var(--marca-50);
+  --ifm-menu-color-background-hover: var(--slate-100);
+
+  --ifm-link-color: var(--marca-700);
+  --ifm-link-hover-color: var(--marca-800);
+
+  --ifm-code-font-size: 90%;
+  --ifm-code-background: var(--slate-100);
+  --ifm-table-border-color: var(--slate-200);
+  --ifm-table-head-background: var(--slate-50);
+  --ifm-table-head-color: var(--slate-500);
+  --ifm-table-stripe-background: transparent;
+
+  --ifm-footer-background-color: #ffffff;
+  --ifm-footer-color: var(--slate-500);
+  --ifm-footer-link-color: var(--slate-600);
+  --ifm-footer-title-color: var(--slate-900);
+
+  --docusaurus-highlighted-code-line-bg: rgb(15 118 110 / 0.1);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------------------------------------------------------------- Barra superior */
+.navbar {
+  border-bottom: 1px solid var(--slate-200);
+}
+.navbar__brand {
+  gap: 0.25rem;
+}
+.navbar__logo {
+  height: 2rem;
+}
+.navbar__title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--slate-900);
+}
+.navbar__link {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.navbar__link--active {
+  color: var(--marca-800);
+}
+
+/* ---------------------------------------------------------------- Barra lateral (como el menú de la app) */
+.theme-doc-sidebar-container {
+  background: #ffffff;
+  border-right: 1px solid var(--slate-200) !important;
+}
+.menu {
+  padding: 1rem 0.75rem !important;
+}
+.menu__link,
+.menu__caret {
+  border-radius: 0.5rem;
+}
+.menu__link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.45rem 0.75rem;
+}
+.menu__link--active:not(.menu__link--sublist) {
+  font-weight: 600;
+}
+.menu__list-item-collapsible:hover {
+  background: var(--slate-100);
+}
+.menu__list .menu__list {
+  border-left: 1px solid var(--slate-200);
+  margin-left: 0.9rem;
+  padding-left: 0.35rem;
+}
+
+/* ---------------------------------------------------------------- Contenido */
+.theme-doc-markdown h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.theme-doc-markdown h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--slate-200);
+  margin-top: 2.25rem;
+}
+.theme-doc-markdown h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.theme-doc-markdown {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Tablas como las tarjetas de la app: fondo blanco, borde slate-200, cabecera en mayúsculas pequeñas */
+.theme-doc-markdown table {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border: 1px solid var(--slate-200);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: var(--ifm-global-shadow-lw);
+  font-size: 0.85rem;
+}
+.theme-doc-markdown table thead tr {
+  border-bottom: none;
+}
+.theme-doc-markdown table th {
+  background: var(--slate-50);
+  color: var(--slate-500);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+.theme-doc-markdown table th,
+.theme-doc-markdown table td {
+  border: none;
+  border-bottom: 1px solid var(--slate-100);
+  padding: 0.6rem 0.9rem;
+  vertical-align: top;
+}
+.theme-doc-markdown table tr:last-child td {
+  border-bottom: none;
+}
+.theme-doc-markdown table tr:hover td {
+  background: var(--slate-50);
+}
+
+/* Código en línea con el tono de las insignias de la app */
+.theme-doc-markdown :not(pre) > code {
+  border: 1px solid var(--slate-200);
+  background: var(--slate-100);
+  color: var(--slate-800);
+  padding: 0.05rem 0.3rem;
+  border-radius: 0.35rem;
+}
+.theme-doc-markdown pre,
+.theme-code-block {
+  border-radius: 0.75rem !important;
+  border: 1px solid var(--slate-200);
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+/* Avisos */
+.alert {
+  border-radius: 0.75rem;
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+/* Tarjetas del índice generado de cada categoría */
+.card {
+  border: 1px solid var(--slate-200);
+  border-radius: 0.75rem;
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+a.card:hover {
+  border-color: var(--marca-600);
+}
+
+/* Paginación anterior/siguiente */
+.pagination-nav__link {
+  background: #ffffff;
+  border-color: var(--slate-200);
+  border-radius: 0.75rem;
+}
+.pagination-nav__link:hover {
+  border-color: var(--marca-600);
+}
+
+/* Tabla de contenidos */
+.table-of-contents__link {
+  font-size: 0.8rem;
+  color: var(--slate-500);
+}
+.table-of-contents__link--active {
+  color: var(--marca-700);
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------------- Pie */
+.footer {
+  border-top: 1px solid var(--slate-200);
+  font-size: 0.85rem;
+}

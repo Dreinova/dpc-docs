@@ -1,0 +1,5 @@
+{
+  "label": "Base de datos",
+  "position": 3,
+  "link": { "type": "generated-index", "description": "Esquema PostgreSQL/Supabase: tablas, cálculos, vistas, funciones, auditoría y migraciones." }
+}

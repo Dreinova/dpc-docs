@@ -20,7 +20,8 @@ Cantidades validadas por **año de revisión del informe** (Uso 1 + Uso 2), guar
 Búsqueda por expediente, titular, NIT o representante legal, con filtros de estado (activo/archivado) y uso (Uso 1/Uso 2).
 Los filtros van en la URL. Datos: `v_directorio`. Desde aquí se entra al consolidado de [proyecciones](proyecciones.md).
 
-:::note Alta de empresas
+:::note 
+Alta de empresas
 La interfaz edita empresas existentes; no tiene un botón para crear una nueva. Los expedientes llegan por la
 [importación](../importacion/proceso.md). La RPC `guardar_expediente` sí admite crear (sin `id`), por si se agrega esa opción.
 :::

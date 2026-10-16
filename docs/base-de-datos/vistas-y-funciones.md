@@ -54,7 +54,8 @@ en Python, para comparar nombres de operadores, gestores y profesionales).
 | `trg_anadir_a_empresas` | `certificados_gestion` | after insert | Operador de gestión global: añade el certificado nuevo a todas las empresas que usan ese gestor con ese operador |
 | `trg_anadir_certificados` | `expediente_gestores` | after insert | Operador de gestión global: la empresa recibe los certificados existentes del gestor asociado |
 
-:::note Certificados quitados no vuelven solos
+:::note 
+Certificados quitados no vuelven solos
 Los dos triggers de gestión global solo actúan al **crear** un certificado o al **asociar** un gestor. Si la empresa quita un
 certificado que no presentó, no reaparece en ediciones posteriores.
 :::

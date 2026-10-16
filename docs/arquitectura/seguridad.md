@@ -78,7 +78,8 @@ Aplicado según el asesor de seguridad de Supabase:
 | `DPC_DB_URL_LOCAL` | Variable de entorno | Para forzar la base local en los importadores (`--db-env DPC_DB_URL_LOCAL`). |
 | `VERCEL_TOKEN` | Secreto de GitHub Actions | Despliegue a Vercel. |
 
-:::warning Datos reales fuera del repositorio
+:::warning 
+Datos reales fuera del repositorio
 Los Excel (`*.xlsx`) y la carpeta `supabase/importacion/` (SQL y reportes con datos reales) están en `.gitignore`.
 Los usuarios de desarrollo (`admin@dpc.local`, `editor@dpc.local`, `consulta@dpc.local`) existen **solo** en la base local
 (`scripts/excel/usuarios_locales.sql`); el seed de producción se genera sin ellos (`--produccion`).

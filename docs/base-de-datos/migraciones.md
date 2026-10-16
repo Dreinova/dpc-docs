@@ -33,7 +33,8 @@ Esquema versionado en `supabase/migrations/`. Se aplican en orden por nombre (fe
 5. Probar en local: `npm run db:reset` y `npm test` (las pruebas de BD aplican **todas** las migraciones sobre PGlite).
 6. Regenerar tipos si hace falta: `npm run db:tipos`.
 
-:::caution Columnas generadas
+:::caution 
+Columnas generadas
 No se puede cambiar la expresión de una columna generada: hay que borrarla y crearla de nuevo, y antes borrar las vistas que
 dependen de ella (ver la migración 13 con `meta_recoleccion` y `v_proyecciones`).
 :::

@@ -59,7 +59,8 @@ docs/              Análisis de los Excel y decisiones (01–06)
 | [Operación](operacion/desarrollo-local.md) | Puesta en marcha local, pruebas y despliegue |
 | [Referencia](referencia/decisiones.md) | Decisiones del cliente, pendientes y glosario |
 
-:::info Documentos de análisis del repositorio
+:::info 
+Documentos de análisis del repositorio
 Esta documentación resume y actualiza los análisis de `docs/01…06` del repositorio (inventario de los Excel, contradicciones
 encontradas, conciliaciones con cifras). Cuando necesite el detalle fila por fila de un Excel, consulte esos archivos.
 :::

@@ -68,7 +68,8 @@ Atajos de npm: `npm run importar` (Fase 3 con `--ejecutar`) y `npm run importar:
 | `--ensayo` | Ejecuta todo y lo deshace (rollback) |
 | `--db-env` | Variable de entorno con la cadena de conexión (por defecto `DPC_DB_URL`); si no existe, la base local de `supabase start` |
 
-:::danger La variable por defecto apunta a producción
+:::danger 
+La variable por defecto apunta a producción
 En el equipo de trabajo, `DPC_DB_URL` apunta a **producción**. Para trabajar en local use `--db-env DPC_DB_URL_LOCAL` (o
 `npm run importar:certificados`). La cadena de conexión nunca se imprime ni se escribe en archivos.
 :::
